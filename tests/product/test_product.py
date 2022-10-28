@@ -9,7 +9,7 @@ def test_cria_produto():
         "2022-01-01",
         "2022-12-12",
         123456,
-        "guardado de qualquer jeito",
+        "de qualquer jeito",
     )
 
     assert cria_produto.id == 1
@@ -20,5 +20,5 @@ def test_cria_produto():
     assert cria_produto.numero_de_serie == 123456
     assert (
         cria_produto.instrucoes_de_armazenamento
-        == "guardado de qualquer jeito"
+        == "de qualquer jeito"
     )
