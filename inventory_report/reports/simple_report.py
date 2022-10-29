@@ -33,6 +33,5 @@ class SimpleReport:
     def empresa_mais_produtos(self, list_products):
         list = [product["nome_da_empresa"] for product in list_products]
         count = Counter(list).most_common(1)
-        return count
-        # count = Counter(list)
-        # return max(count)
+        empresa, vezes = count[0]
+        return empresa
