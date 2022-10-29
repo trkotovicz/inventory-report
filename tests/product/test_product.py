@@ -18,7 +18,4 @@ def test_cria_produto():
     assert cria_produto.data_de_fabricacao == "2022-01-01"
     assert cria_produto.data_de_validade == "2022-12-12"
     assert cria_produto.numero_de_serie == 123456
-    assert (
-        cria_produto.instrucoes_de_armazenamento
-        == "de qualquer jeito"
-    )
+    assert cria_produto.instrucoes_de_armazenamento == "de qualquer jeito"
