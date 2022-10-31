@@ -13,11 +13,6 @@ class CompleteReport(SimpleReport):
         for empresa, vezes in count.items():
             complete_report += f"- {empresa}: {vezes}\n"
 
-        # empresa, vezes = count
-        # for empresa in count:
-        #     f"- {empresa}: {vezes}\n"
-        #     f"- {count}\n"
-
         return (
             f"{simple_report}\n"
             f"Produtos estocados por empresa:\n"
