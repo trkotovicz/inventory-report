@@ -16,13 +16,8 @@ class Inventory:
                 list = json.load(file)
             if path.endswith('.xml'):
                 list = xmltodict.parse(file.read())['dataset']['record']
-                # list = Inventory.xml_reader(path)
 
         if type == 'simples':
             return SimpleReport.generate(list)
         else:
             return CompleteReport.generate(list)
-
-    # def xml_reader(self, path):
-    #     list = xmltodict.parse(path.read())['dataset']['record']
-    #     return list

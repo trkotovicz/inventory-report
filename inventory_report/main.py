@@ -5,7 +5,7 @@ from inventory_report.importer.xml_importer import XmlImporter
 from inventory_report.importer.json_importer import JsonImporter
 
 
-def type_importer(path):
+def type_importer(path: str):
     if path.endswith(".csv"):
         return CsvImporter
     elif path.endswith(".xml"):
